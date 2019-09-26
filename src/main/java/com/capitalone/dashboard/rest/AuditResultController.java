@@ -31,6 +31,7 @@ public class AuditResultController {
         Iterable<AuditResult> auditResults = auditResultService.getAuditResultsAll(pageable);
         return ResponseEntity.ok().body(auditResults);
     }
+    System.out.println("navya");
 
     @RequestMapping(value = "/auditresult/dashboard/audittype/{auditType}/pages", method = GET, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<Iterable<AuditResult>> getAuditResultsByAuditType(@Valid @PathVariable AuditType auditType, Pageable pageable) {
