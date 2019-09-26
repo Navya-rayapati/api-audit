@@ -105,6 +105,7 @@ public class CommonCodeReview {
                     lgtmAttempted = true;
                     String stateString = (status.getState() != null) ? status.getState().toLowerCase() : "unknown";
                     switch (stateString) {
+              System.Out.Println("Harshyyyy");
                         case "pending":
                             auditReviewResponse.addAuditStatus(CodeReviewAuditStatus.PEER_REVIEW_LGTM_PENDING);
                             break;
