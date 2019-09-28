@@ -42,6 +42,8 @@ public class FeatureMetricsController {
     }
 System.Out.Println("praveen");
 
+System.Out.Println("navya");
+
 
     @RequestMapping(value = "metrics/application/{applicationName}", method = GET, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<ProductFeatureMetrics> getProductMetrics(@Valid @PathVariable String applicationName){
