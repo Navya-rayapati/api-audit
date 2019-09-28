@@ -40,6 +40,8 @@ public class FeatureMetricsController {
 
         return ResponseEntity.ok().body(featureMetrics);
     }
+System.Out.Println("praveen");
+
 
     @RequestMapping(value = "metrics/application/{applicationName}", method = GET, produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<ProductFeatureMetrics> getProductMetrics(@Valid @PathVariable String applicationName){
